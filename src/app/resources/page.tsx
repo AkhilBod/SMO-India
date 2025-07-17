@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { BuildingOfficeIcon, GlobeAsiaAustraliaIcon, BeakerIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 
 const partners = [

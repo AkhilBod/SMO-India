@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function AboutPage() {
   return (
@@ -11,7 +11,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Who We Are</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              SMO Clinical Research (I) Pvt Ltd (SMO-India) was established in 2007 and is a privately held Contract Research Organization (CRO), headquartered in Bangalore, India's healthcare services and IT hub. We are registered under the Central Drug Standard Control Organization (CDSCO) and operate in full compliance with the New Drugs and Clinical Trials (NDCT) Rules, 2019.
+              SMO Clinical Research (I) Pvt Ltd (SMO-India) was established in 2007 and is a privately held Contract Research Organization (CRO), headquartered in Bangalore, India&apos;s healthcare services and IT hub. We are registered under the Central Drug Standard Control Organization (CDSCO) and operate in full compliance with the New Drugs and Clinical Trials (NDCT) Rules, 2019.
             </p>
           </div>
           <div className="mt-10 lg:mt-0">
@@ -54,7 +54,7 @@ export default function AboutPage() {
               >
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Mission</h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  To establish ourselves as India's trail-blazer Contract Research Organization by weaving a network of highly qualified and experienced clinical researchers and healthcare professionals with demonstrated expertise in conducting clinical trials and to maintain the highest standards of quality.
+                  To establish ourselves as India&apos;s trail-blazer Contract Research Organization by weaving a network of highly qualified and experienced clinical researchers and healthcare professionals with demonstrated expertise in conducting clinical trials and to maintain the highest standards of quality.
                 </p>
               </motion.div>
             </div>
