@@ -20,7 +20,7 @@ export default function Hero() {
               Welcome to SMO India
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Leading provider of industrial solutions, delivering excellence in manufacturing and engineering services across India.
+                SMO India Clinical Research Pvt Ltd is a CDSCO-registered, full-service Contract Reaserch Organization (CRO) headquartered in Banglore. We specialize in clinical trial opertions, site management, and regulatory affairs across diverse therapeutic areas.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

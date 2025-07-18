@@ -15,9 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SMO India - Industrial Solutions & Engineering Services",
+  title: "SMO India - Clinical Research Organization (CRO)",
   description:
-    "Leading provider of industrial solutions and engineering services across India",
+    "CDSCO-registered Contract Research Organization specializing in Phase I-IV clinical trials, site management, and regulatory affairs across India.",
+  icons: {
+    icon: "https://i.ibb.co/MD5RQ6v6/index-06.jpg",
+    shortcut: "https://i.ibb.co/MD5RQ6v6/index-06.jpg",
+    apple: "https://i.ibb.co/MD5RQ6v6/index-06.jpg",
+  },
 };
 
 export default function RootLayout({

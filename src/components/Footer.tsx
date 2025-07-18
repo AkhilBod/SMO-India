@@ -12,7 +12,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-900">Contact</h3>
             <div className="flex flex-col space-y-2">
               <p className="text-sm text-gray-600">Email: info@smo-india.com</p>
-              <p className="text-sm text-gray-600">Phone: +91 XXX XXX XXXX</p>
+              <p className="text-sm text-gray-600">Phone: +91 80 41228333</p>
               <p className="text-sm text-gray-600">Address: Industrial Area, City, India</p>
             </div>
           </div>
