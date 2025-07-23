@@ -30,7 +30,7 @@ export default function Hero() {
               >
                 Get Started Today
               </a>
-              <a href="/about" className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-700 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 transition-all duration-200" style={{"--hover-text": "#12529c", "--hover-border": "#12529c"} as any}>
+              <a href="/about" className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-700 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 transition-all duration-200" style={{"--hover-text": "#12529c", "--hover-border": "#12529c"} as React.CSSProperties}>
                 Learn more 
                 <svg className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

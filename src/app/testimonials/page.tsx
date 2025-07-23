@@ -72,7 +72,7 @@ export default function TestimonialsPage() {
 							className="flex flex-col justify-between bg-white p-8 shadow-lg ring-1 ring-gray-200 sm:p-10 rounded-2xl"
 						>
 							<blockquote className="text-gray-600 text-sm">
-								<p>"{testimonial.content}"</p>
+								<p>&quot;{testimonial.content}&quot;</p>
 							</blockquote>
 							<div className="mt-6 flex items-center gap-4">
 								<div className="flex-shrink-0">
