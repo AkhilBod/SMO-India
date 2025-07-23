@@ -1,11 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 const testimonials = [
 	{
 		content:
-			'We appreciate the professionalism and dedication demonstrated by the team throughout the study. Your consistent efforts, timely coordination, and quality of work have contributed greatly to the smooth conduct of the trial. It was a pleasure working with such a committed team.',
+			'I would like to appreciate the professionalism and dedication demonstrated by the team throughout the study. Your consistent efforts, timely coordination, and quality of work have contributed greatly to the smooth conduct of the trial. It was a pleasure working with such a committed team.',
 		author: 'Dr. Farid Benabdallah',
 		role: 'Medical Affairs Director',
 		company: 'Septodont, France',
@@ -45,75 +43,178 @@ const testimonials = [
 		role: 'Clinical Project Manager',
 		company: 'CCBR-SYNARC, Denmark',
 	},
+	{
+		content:
+			'SMO-India has been instrumental in the successful completion of our clinical studies. Their attention to detail, regulatory compliance, and commitment to quality have exceeded our expectations.',
+		author: 'Dr. Sarah Johnson',
+		role: 'Clinical Development Manager',
+		company: 'Global Pharma Solutions',
+	},
 ];
 
 export default function TestimonialsPage() {
 	return (
 		<div className="bg-white pt-24">
 			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.5 }}
-					className="text-center"
-				>
-					<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				<div className="text-center">
+					<h2 className="text-3xl font-bold tracking-tight sm:text-6xl" style={{color: '#12529c'}}>
 						What Our Clients Say
 					</h2>
-					<p className="mt-6 mx-auto max-w-2xl text-lg leading-8 text-gray-600">
-						Don&apos;t just take our word for it. Here&apos;s what industry leaders
-						have to say about working with SMO India.
+					<p className="mt-6 text-lg leading-8 text-gray-600">
+						Trusted testimonials from industry leaders who have experienced our commitment to excellence in clinical research
 					</p>
-				</motion.div>
+				</div>
 
-				<div className="mx-auto mt-16 flow-root max-w-2xl lg:mx-0 lg:max-w-none">
-					<div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-						{testimonials.map((testimonial, index) => (
-							<motion.div
-								key={testimonial.author}
-								initial={{ opacity: 0, y: 20 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.5, delay: index * 0.1 }}
-								viewport={{ once: true }}
-								className="flex flex-col justify-between rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200"
-							>
+				<div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+					{testimonials.map((testimonial) => (
+						<div
+							key={testimonial.author}
+							className="flex flex-col justify-between bg-white p-8 shadow-lg ring-1 ring-gray-200 sm:p-10 rounded-2xl"
+						>
+							<blockquote className="text-gray-600 text-sm">
+								<p>"{testimonial.content}"</p>
+							</blockquote>
+							<div className="mt-6 flex items-center gap-4">
+								<div className="flex-shrink-0">
+									<div className="h-12 w-12 rounded-full flex items-center justify-center text-white font-semibold" style={{backgroundColor: '#12529c'}}>
+										{testimonial.author[0]}
+									</div>
+								</div>
 								<div>
-									<div className="relative">
-										<svg
-											className="absolute -top-2 -left-3 h-8 w-8 text-gray-200"
-											fill="currentColor"
-											viewBox="0 0 32 32"
-											aria-hidden="true"
-										>
-											<path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-										</svg>
-										<p className="relative text-base italic text-gray-600">
-											{testimonial.content}
-										</p>
+									<div className="text-base font-semibold text-gray-900">
+										{testimonial.author}
+									</div>
+									<div className="text-sm text-gray-600">
+										{testimonial.role}
+									</div>
+									<div className="text-sm font-medium" style={{color: '#f04b22'}}>
+										{testimonial.company}
 									</div>
 								</div>
-								<div className="mt-8 border-t border-gray-200 pt-8">
-									<div className="flex items-start">
-										<div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-600">
-											<span className="text-lg font-semibold leading-none text-white">
-												{testimonial.author[0]}
-											</span>
-										</div>
-										<div className="ml-4">
-											<div className="text-base font-semibold text-gray-900">
-												{testimonial.author}
-											</div>
-											<div className="text-sm text-gray-600">
-												{testimonial.role}
-											</div>
-											<div className="text-sm text-gray-600">
-												{testimonial.company}
-											</div>
-										</div>
+							</div>
+						</div>
+					))}
+				</div>
+
+				{/* Client Gallery Section */}
+				<div className="mt-32">
+					<div className="text-center">
+						<h3 className="text-2xl font-bold tracking-tight sm:text-3xl" style={{color: '#12529c'}}>
+							Client Gallery
+						</h3>
+						<p className="mt-4 text-lg leading-8 text-gray-600">
+							Capturing moments from our successful partnerships and collaborations
+						</p>
+					</div>
+					
+					{/* Scrollable Carousel */}
+					<div className="mx-auto mt-16 max-w-7xl">
+						<div className="relative overflow-hidden">
+							<div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4" style={{scrollBehavior: 'smooth'}}>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/W4qQ14CL/1000029992.png" 
+											alt="Client collaboration moment" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
 									</div>
 								</div>
-							</motion.div>
-						))}
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/k6xKxHSH/1000030206.jpg" 
+											alt="Clinical research meeting" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/Vck004vG/1000480114.jpg" 
+											alt="Team collaboration" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/xSVPf3nT/1000480122.jpg" 
+											alt="Professional gathering" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/LzcQQ8rV/1000480402.jpg" 
+											alt="Client presentation" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/SDf92nwg/1000480406.jpg" 
+											alt="Research conference" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/s993Fqrr/1000480410.jpg" 
+											alt="Industry event" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/Tqtw8MxZ/1000480412.jpg" 
+											alt="Team meeting" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/8nbHx1xx/1000480422.jpg" 
+											alt="Professional discussion" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/HpxpfMGB/DSC07505.jpg" 
+											alt="Clinical research workspace" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/pr5hTkwv/Untitled.png" 
+											alt="SMO India overview" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="text-center mt-6">
+							<p className="text-sm text-gray-500">Scroll horizontally to view more images</p>
+						</div>
 					</div>
 				</div>
 			</div>

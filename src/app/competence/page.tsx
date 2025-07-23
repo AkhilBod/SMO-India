@@ -1,7 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 const competenceAreas = [
 	{
 		title: 'Phase I, II, and III Clinical Trials',
@@ -16,7 +14,7 @@ const competenceAreas = [
 		],
 	},
 	{
-		title: 'Phase IV / Post-Marketing',
+		title: 'Phase IV/Post Marketing Surveillance',
 		description:
 			'Supporting your research objectives through monitoring safety, demonstrating effectiveness, and evaluating benefit-risk for market access.',
 		features: [
@@ -66,7 +64,7 @@ const competenceAreas = [
 		],
 	},
 	{
-		title: 'Audit & Inspection Management',
+		title: 'Audit & Inspection',
 		description:
 			'Proven track record in successfully navigating regulatory inspections and sponsor audits across multiple clinical studies.',
 		features: [
@@ -83,33 +81,23 @@ export default function CompetencePage() {
 	return (
 		<div className="bg-white pt-24">
 			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-				<motion.div
-					initial={{ opacity: 0, y: 20 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.5 }}
-					className="text-center"
-				>
-					<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				<div className="text-center">
+					<h2 className="text-3xl font-bold tracking-tight sm:text-6xl" style={{color: '#12529c'}}>
 						Our Competence Areas
 					</h2>
 					<p className="mt-6 text-lg leading-8 text-gray-600">
-						Leveraging our extensive experience and expertise across various
-						clinical research domains
+						Leveraging our extensive experience and expertise across various clinical research domains
 					</p>
-				</motion.div>
+				</div>
 
 				<div className="mt-20 grid grid-cols-1 gap-16 lg:grid-cols-2">
 					{competenceAreas.map((area, index) => (
-						<motion.div
+						<div
 							key={area.title}
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5, delay: index * 0.1 }}
-							viewport={{ once: true }}
 							className="relative flex flex-col gap-6 rounded-2xl bg-white p-8 shadow-xl ring-1 ring-gray-200"
 						>
 							<div>
-								<h3 className="text-xl font-semibold leading-7 text-gray-900">
+								<h3 className="text-xl font-semibold leading-7" style={{color: index % 3 === 0 ? '#79b647' : index % 3 === 1 ? '#fecb09' : '#f04b22'}}>
 									{area.title}
 								</h3>
 								<p className="mt-4 text-base leading-7 text-gray-600">
@@ -120,7 +108,8 @@ export default function CompetencePage() {
 								{area.features.map((feature) => (
 									<li key={feature} className="flex items-start">
 										<svg
-											className="h-5 w-5 flex-shrink-0 text-blue-500"
+											className="h-5 w-5 flex-shrink-0"
+											style={{color: index % 3 === 0 ? '#79b647' : index % 3 === 1 ? '#fecb09' : '#f04b22'}}
 											viewBox="0 0 20 20"
 											fill="currentColor"
 											aria-hidden="true"
@@ -137,7 +126,7 @@ export default function CompetencePage() {
 									</li>
 								))}
 							</ul>
-						</motion.div>
+						</div>
 					))}
 				</div>
 			</div>

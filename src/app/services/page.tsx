@@ -1,7 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
-
 const coreServices = [
 	'Feasibility Studies',
 	'Site Selection & Onsite Trial Management',
@@ -50,23 +46,14 @@ const achievements = [
 export default function ServicesPage() {
 	return (
 		<div className="bg-white pt-24">
-			{/* Hero Section */}
-			<div className="relative isolate overflow-hidden bg-gradient-to-b from-blue-100/20">
-				<div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-					<div className="mx-auto max-w-4xl text-center">
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5 }}
-						>
-							<h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-								Comprehensive Clinical Research Services
-							</h2>
-							<p className="mt-6 text-lg leading-8 text-gray-600">
-								For CRO Sponsors - SMO-India provides services in all related spheres to support our clients&apos; Clinical trial processes. The services are customized to our clients&apos; requirements.
-							</p>
-						</motion.div>
-					</div>
+			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+				<div className="text-center">
+					<h2 className="text-3xl font-bold tracking-tight sm:text-6xl" style={{color: '#12529c'}}>
+						 Clinical Research Services
+					</h2>
+					<p className="mt-6 text-lg leading-8 text-gray-600">
+						Delivering excellence across all spheres of clinical trial processes with customized solutions for our clients
+					</p>
 				</div>
 			</div>
 
@@ -76,7 +63,7 @@ export default function ServicesPage() {
 			<div className="bg-gray-50 py-24 sm:py-32">
 				<div className="mx-auto max-w-7xl px-6 lg:px-8">
 					<div className="mx-auto max-w-2xl text-center">
-						<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+						<h2 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{color: '#79b647'}}>
 							Our Core Services
 						</h2>
 						<p className="mt-4 text-lg leading-8 text-gray-600">
@@ -85,18 +72,14 @@ export default function ServicesPage() {
 					</div>
 					<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-5">
 						{coreServices.map((service, index) => (
-							<motion.div
+							<div
 								key={service}
-								initial={{ opacity: 0, y: 20 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.5, delay: index * 0.05 }}
-								viewport={{ once: true }}
 								className="flex flex-col rounded-lg bg-white p-6 shadow-sm"
 							>
 								<h3 className="font-semibold text-gray-900 text-sm text-center">
 									{service}
 								</h3>
-							</motion.div>
+							</div>
 						))}
 					</div>
 				</div>
@@ -105,7 +88,7 @@ export default function ServicesPage() {
 			{/* Key Strengths */}
 			<div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
 				<div className="mx-auto max-w-2xl text-center">
-					<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+					<h2 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{color: '#fecb09'}}>
 						Our Key Strengths
 					</h2>
 					<p className="mt-4 text-lg leading-8 text-gray-600">
@@ -114,16 +97,13 @@ export default function ServicesPage() {
 				</div>
 				<div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-6 lg:grid-cols-2">
 					{keyStrengths.map((strength, index) => (
-						<motion.div
+						<div
 							key={index}
-							initial={{ opacity: 0, x: -20 }}
-							whileInView={{ opacity: 1, x: 0 }}
-							transition={{ duration: 0.5, delay: index * 0.1 }}
-							viewport={{ once: true }}
 							className="flex items-start"
 						>
 							<svg
-								className="h-6 w-6 flex-shrink-0 text-blue-500 mt-1"
+								className="h-6 w-6 flex-shrink-0 mt-1"
+								style={{color: index % 3 === 0 ? '#f04b22' : index % 3 === 1 ? '#79b647' : '#fecb09'}}
 								fill="none"
 								viewBox="0 0 24 24"
 								strokeWidth="1.5"
@@ -136,23 +116,19 @@ export default function ServicesPage() {
 								/>
 							</svg>
 							<p className="ml-4 text-gray-600 leading-relaxed">{strength}</p>
-						</motion.div>
+						</div>
 					))}
 				</div>
 			</div>
 
 			{/* Database & Partnership */}
-			<div className="bg-blue-50 py-24 sm:py-32">
+			<div style={{backgroundColor: 'rgba(18, 82, 156, 0.05)'}} className="py-24 sm:py-32">
 				<div className="mx-auto max-w-7xl px-6 lg:px-8">
 					<div className="mx-auto max-w-4xl">
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5 }}
-							viewport={{ once: true }}
+						<div
 							className="rounded-2xl bg-white p-8 shadow-lg"
 						>
-							<h3 className="text-2xl font-bold text-gray-900 mb-6">
+							<h3 className="text-2xl font-bold mb-6" style={{color: '#f04b22'}}>
 								Advanced Clinical Trial Database
 							</h3>
 							<p className="text-gray-600 leading-relaxed mb-6">
@@ -161,13 +137,13 @@ export default function ServicesPage() {
 							<p className="text-gray-600 leading-relaxed">
 								Thus SMO-India is becoming reliable partner for Sponsor/CRO in conducting multicentric clinical trials. This also helps to efficiently organize the total clinical trial process, both centrally (HQ) and locally (Site). Our organizational structure offers Sponsor and other clients immediate access to several pre-qualified investigators in all therapeutic segments.
 							</p>
-						</motion.div>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			{/* Stats Section */}
-			<div className="bg-gray-900 py-24 sm:py-32">
+			<div style={{backgroundColor: '#12529c'}} className="py-24 sm:py-32">
 				<div className="mx-auto max-w-7xl px-6 lg:px-8">
 					<div className="mx-auto max-w-2xl lg:max-w-none">
 						<div className="text-center">
@@ -180,21 +156,17 @@ export default function ServicesPage() {
 						</div>
 						<dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
 							{achievements.map((stat, index) => (
-								<motion.div
+								<div
 									key={stat.label}
-									initial={{ opacity: 0, y: 20 }}
-									whileInView={{ opacity: 1, y: 0 }}
-									transition={{ duration: 0.5, delay: index * 0.1 }}
-									viewport={{ once: true }}
 									className="flex flex-col bg-white/5 p-8"
 								>
 									<dt className="text-sm font-semibold leading-6 text-gray-300">
 										{stat.label}
 									</dt>
-									<dd className="order-first text-3xl font-semibold tracking-tight text-blue-400">
+									<dd className="order-first text-3xl font-semibold tracking-tight" style={{color: '#fecb09'}}>
 										{stat.number}
 									</dd>
-								</motion.div>
+								</div>
 							))}
 						</dl>
 					</div>

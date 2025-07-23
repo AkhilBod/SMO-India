@@ -13,6 +13,7 @@ const navigation = [
   { name: 'Therapeutic Areas', href: '/therapeutic-areas' },
   { name: 'Our Competence', href: '/competence' },
   { name: 'Clinical Trials', href: '/clinical-trials' },
+  { name: 'Regulatory Affairs 3PO', href: '/regulatory-affairs' },
   { name: 'Resources', href: '/resources' },
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact', href: '/contact' },
@@ -27,7 +28,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
-              src="https://i.ibb.co/MD5RQ6v6/index-06.jpg"
+              src="https://i.ibb.co/bjmQT8zT/image-1.png"
               alt="SMO India Logo"
               width={150}
               height={50}

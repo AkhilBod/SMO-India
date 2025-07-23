@@ -1,7 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 const therapeuticAreas = [
 	{
 		name: 'CARDIOVASCULAR',
@@ -68,6 +66,78 @@ const therapeuticAreas = [
 			'Tumor Response Studies',
 		],
 	},
+	{
+		name: 'NEUROLOGY',
+		count: 3,
+		studies: [
+			'Neurological Disorders',
+			'Central Nervous System Studies',
+			'Neurodegenerative Diseases',
+		],
+	},
+	{
+		name: 'ORTHOPEDICS',
+		count: 2,
+		studies: [
+			'Musculoskeletal Disorders',
+			'Joint Replacement Studies',
+			'Bone Health Research',
+		],
+	},
+	{
+		name: 'PULMONOLOGY',
+		count: 3,
+		studies: [
+			'Respiratory Disorders',
+			'Lung Function Studies',
+			'Asthma and COPD Research',
+		],
+	},
+	{
+		name: 'ENT',
+		count: 2,
+		studies: [
+			'Ear, Nose, and Throat Disorders',
+			'Hearing Studies',
+			'Sinus Research',
+		],
+	},
+	{
+		name: 'HEMATOLOGY',
+		count: 3,
+		studies: [
+			'Blood Disorders',
+			'Hematological Malignancies',
+			'Coagulation Studies',
+		],
+	},
+	{
+		name: 'DENTAL STUDIES',
+		count: 2,
+		studies: [
+			'Oral Health Research',
+			'Dental Device Studies',
+			'Periodontal Disease Studies',
+		],
+	},
+	{
+		name: 'OSTEOLOGY',
+		count: 2,
+		studies: [
+			'Bone Density Studies',
+			'Osteoporosis Research',
+			'Bone Metabolism Studies',
+		],
+	},
+	{
+		name: 'DERMATOLOGY',
+		count: 3,
+		studies: [
+			'Skin Disorders',
+			'Dermatological Conditions',
+			'Cosmetic Research Studies',
+		],
+	},
 ];
 
 export default function TherapeuticAreasPage() {
@@ -75,36 +145,28 @@ export default function TherapeuticAreasPage() {
 		<div className="bg-white pt-24">
 			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
 				<div className="text-center">
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.5 }}
-					>
-						<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+					<div>
+						<h2 className="text-3xl font-bold tracking-tight sm:text-6xl" style={{color: '#12529c'}}>
 							Therapeutic Areas
 						</h2>
 						<p className="mt-4 text-lg leading-8 text-gray-600">
 							Comprehensive expertise across multiple therapeutic domains with
 							proven success in clinical trials
 						</p>
-					</motion.div>
+					</div>
 				</div>
 
 				<div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 					{therapeuticAreas.map((area, index) => (
-						<motion.div
+						<div
 							key={area.name}
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5, delay: index * 0.1 }}
-							viewport={{ once: true }}
 							className="relative rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-shadow"
 						>
-							<div className="absolute -top-4 left-4 inline-flex items-center rounded-full bg-blue-50 px-4 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+							<div className="absolute -top-4 left-4 inline-flex items-center rounded-full px-4 py-1 text-xs font-medium text-white ring-1 ring-inset ring-gray-200" style={{backgroundColor: '#12529c'}}>
 								{area.count} Studies
 							</div>
 
-							<h3 className="text-xl font-semibold text-gray-900 mt-2">
+							<h3 className="text-xl font-semibold mt-2" style={{color: '#12529c'}}>
 								{area.name}
 							</h3>
 
@@ -115,7 +177,7 @@ export default function TherapeuticAreasPage() {
 									</li>
 								))}
 							</ul>
-						</motion.div>
+						</div>
 					))}
 				</div>
 			</div>

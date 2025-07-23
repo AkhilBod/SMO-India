@@ -13,7 +13,11 @@ export default function Footer() {
             <div className="flex flex-col space-y-2">
               <p className="text-sm text-gray-600">Email: info@smo-india.com</p>
               <p className="text-sm text-gray-600">Phone: +91 80 41228333</p>
-              <p className="text-sm text-gray-600">Address: Industrial Area, City, India</p>
+              <p className="text-sm text-gray-600">Address: Bangalore, Karnataka, India</p>
+              <p className="text-sm text-gray-600">Website: www.smo-india.com</p>
+              <a href="https://www.linkedin.com/company/smo-clinical-research-india-private-limited/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-gray-900">
+                LinkedIn: SMO Clinical Research India
+              </a>
             </div>
           </div>
         </div>

@@ -1,10 +1,6 @@
-'use client';
-
-import { motion } from 'framer-motion';
-
 const caseStudies = [
 	{
-		title: 'ALVEOGYL Medical Device Study (2024)',
+		title: 'ALVEOGYL Medical Device Study',
 		description:
 			'Successfully completed clinical trial for Post-Extraction Dry Socket treatment across India and France.',
 		details: [
@@ -41,6 +37,30 @@ const caseStudies = [
 			'Timeline recovery',
 		],
 	},
+	{
+		title: 'Diabetes Mellitus with Inadequate Glycemic Control',
+		description:
+			'Comprehensive clinical trial for diabetes management with focus on glycemic control optimization.',
+		details: [
+			'Multi-center study design',
+			'Patient stratification protocols',
+			'HbA1c monitoring',
+			'Safety assessments',
+			'Efficacy evaluations',
+		],
+	},
+	{
+		title: 'Diabetes Mellitus with Inadequate Glycemic Control on Insulin',
+		description:
+			'Specialized study for insulin-dependent patients with suboptimal glycemic control.',
+		details: [
+			'Insulin optimization protocols',
+			'Continuous glucose monitoring',
+			'Patient education programs',
+			'Hypoglycemia risk assessment',
+			'Quality of life measures',
+		],
+	},
 ];
 
 const clinicalExpertise = [
@@ -48,7 +68,7 @@ const clinicalExpertise = [
 		title: 'Project Management',
 		points: [
 			'Expert protocol development',
-			'Comprehensive feasibility studies',
+			'Comprehensive feasibilities for studies',
 			'Timeline optimization',
 			'Risk management',
 			'Quality control',
@@ -79,49 +99,26 @@ const clinicalExpertise = [
 export default function ClinicalTrialsPage() {
 	return (
 		<div className="bg-white pt-24">
-			{/* Hero Section */}
-			<div className="relative isolate overflow-hidden bg-gradient-to-b from-blue-100/20">
-				<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.5 }}
-						className="mx-auto max-w-2xl lg:mx-0"
-					>
-						<h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-							Global Clinical Trials
-						</h2>
-						<p className="mt-6 text-lg leading-8 text-gray-600">
-							Delivering excellence in clinical research through comprehensive trial
-							management and successful patient outcomes.
-						</p>
-					</motion.div>
+			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+				<div className="text-center">
+					<h2 className="text-3xl font-bold tracking-tight sm:text-6xl" style={{color: '#12529c'}}>
+						Global Clinical Trials
+					</h2>
+					<p className="mt-6 text-lg leading-8 text-gray-600">
+						Delivering excellence in clinical research through comprehensive trial management and successful patient outcomes
+					</p>
 				</div>
 			</div>
 
 			{/* Case Studies Section */}
 			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-				<div className="mx-auto max-w-2xl lg:mx-0">
-					<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-						Success Stories
-					</h2>
-					<p className="mt-6 text-lg leading-8 text-gray-600">
-						Our track record of successful clinical trials across various therapeutic
-						areas.
-					</p>
-				</div>
-
 				<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 					{caseStudies.map((study, index) => (
-						<motion.div
+						<div
 							key={study.title}
-							initial={{ opacity: 0, y: 20 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.5, delay: index * 0.1 }}
-							viewport={{ once: true }}
 							className="flex flex-col rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200"
 						>
-							<h3 className="text-xl font-semibold text-gray-900">
+							<h3 className="text-xl font-semibold" style={{color: index % 3 === 0 ? '#f04b22' : index % 3 === 1 ? '#79b647' : '#fecb09'}}>
 								{study.title}
 							</h3>
 							<p className="mt-4 text-sm text-gray-600">
@@ -131,7 +128,8 @@ export default function ClinicalTrialsPage() {
 								{study.details.map((detail) => (
 									<li key={detail} className="flex items-start">
 										<svg
-											className="h-5 w-5 flex-shrink-0 text-blue-500"
+											className="h-5 w-5 flex-shrink-0"
+											style={{color: index % 3 === 0 ? '#f04b22' : index % 3 === 1 ? '#79b647' : '#fecb09'}}
 											viewBox="0 0 20 20"
 											fill="currentColor"
 										>
@@ -147,7 +145,7 @@ export default function ClinicalTrialsPage() {
 									</li>
 								))}
 							</ul>
-						</motion.div>
+						</div>
 					))}
 				</div>
 			</div>
@@ -156,7 +154,7 @@ export default function ClinicalTrialsPage() {
 			<div className="bg-gray-50 py-16 sm:py-24">
 				<div className="mx-auto max-w-7xl px-6 lg:px-8">
 					<div className="mx-auto max-w-2xl lg:mx-0">
-						<h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+						<h2 className="text-3xl font-bold tracking-tight sm:text-4xl" style={{color: '#fecb09'}}>
 							Clinical Trial Expertise
 						</h2>
 						<p className="mt-6 text-lg leading-8 text-gray-600">
@@ -167,12 +165,8 @@ export default function ClinicalTrialsPage() {
 
 					<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 						{clinicalExpertise.map((area, index) => (
-							<motion.div
+							<div
 								key={area.title}
-								initial={{ opacity: 0, y: 20 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.5, delay: index * 0.1 }}
-								viewport={{ once: true }}
 								className="rounded-2xl bg-white p-8 shadow-lg"
 							>
 								<h3 className="text-xl font-semibold text-gray-900">
@@ -194,7 +188,7 @@ export default function ClinicalTrialsPage() {
 										</li>
 									))}
 								</ul>
-							</motion.div>
+							</div>
 						))}
 					</div>
 				</div>
