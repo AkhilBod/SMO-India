@@ -226,7 +226,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden" style={{backgroundColor: '#f04b22'}}>
                 <Image
                   src="https://i.ibb.co/M5Zds6tr/cardio.png"
                   alt="Cardiovascular"
@@ -235,18 +235,15 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute top-4 right-4">
-                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#f04b22'}}></div>
-                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">CARDIOVASCULAR</h4>
-                  <p className="text-2xl font-bold" style={{color: '#f04b22'}}>37</p>
+                  <p className="text-2xl font-bold">37</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
             </div>
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden" style={{backgroundColor: '#79b647'}}>
                 <Image
                   src="https://i.ibb.co/JRSTX05f/endo.png"
                   alt="Endocrinology"
@@ -255,18 +252,15 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute top-4 right-4">
-                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#79b647'}}></div>
-                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">ENDOCRINOLOGY</h4>
-                  <p className="text-2xl font-bold" style={{color: '#79b647'}}>38</p>
+                  <p className="text-2xl font-bold">38</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
             </div>
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden" style={{backgroundColor: '#fecb09'}}>
                 <Image
                   src="https://i.ibb.co/fYnKS8m2/stomach-anatomy-biology-human-organ-gastroenterology-medicine-512.webp"
                   alt="Gastroenterology"
@@ -275,18 +269,15 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute top-4 right-4">
-                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#fecb09'}}></div>
-                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">GASTROENTEROLOGY</h4>
-                  <p className="text-2xl font-bold" style={{color: '#fecb09'}}>11</p>
+                  <p className="text-2xl font-bold">11</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
             </div>
             <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden" style={{backgroundColor: '#12529c'}}>
                 <Image
                   src="https://i.ibb.co/4Z4tscS0/nephro.png"
                   alt="Nephrology"
@@ -295,12 +286,9 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute top-4 right-4">
-                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#12529c'}}></div>
-                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">NEPHROLOGY</h4>
-                  <p className="text-2xl font-bold" style={{color: '#12529c'}}>10</p>
+                  <p className="text-2xl font-bold">10</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
