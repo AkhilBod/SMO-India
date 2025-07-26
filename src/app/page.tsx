@@ -225,45 +225,73 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gray-100" style={{"--hover-border": "#f04b22"} as React.CSSProperties}>
-              <div className="w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{backgroundColor: '#f04b22'}}>
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://i.ibb.co/M5Zds6tr/cardio.png"
+                  alt="Cardiovascular"
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <h4 className="font-bold text-lg mb-1">CARDIOVASCULAR</h4>
+                  <p className="text-2xl font-bold">37</p>
+                  <p className="text-sm opacity-90">studies completed</p>
+                </div>
               </div>
-              <h4 className="font-bold text-lg mb-2" style={{color: '#12529c'}}>CARDIOVASCULAR</h4>
-              <p className="text-2xl font-bold mb-1" style={{color: '#12529c'}}>37</p>
-              <p className="text-sm text-gray-600">studies completed</p>
             </div>
-            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gray-100">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{backgroundColor: '#79b647'}}>
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://i.ibb.co/JRSTX05f/endo.png"
+                  alt="Endocrinology"
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <h4 className="font-bold text-lg mb-1">ENDOCRINOLOGY</h4>
+                  <p className="text-2xl font-bold">38</p>
+                  <p className="text-sm opacity-90">studies completed</p>
+                </div>
               </div>
-              <h4 className="font-bold text-lg mb-2" style={{color: '#12529c'}}>ENDOCRINOLOGY</h4>
-              <p className="text-2xl font-bold mb-1" style={{color: '#12529c'}}>38</p>
-              <p className="text-sm text-gray-600">studies completed</p>
             </div>
-            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gray-100">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{backgroundColor: '#fecb09'}}>
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://i.ibb.co/fYnKS8m2/stomach-anatomy-biology-human-organ-gastroenterology-medicine-512.webp"
+                  alt="Gastroenterology"
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <h4 className="font-bold text-lg mb-1">GASTROENTEROLOGY</h4>
+                  <p className="text-2xl font-bold">11</p>
+                  <p className="text-sm opacity-90">studies completed</p>
+                </div>
               </div>
-              <h4 className="font-bold text-lg mb-2" style={{color: '#12529c'}}>GASTROENTEROLOGY</h4>
-              <p className="text-2xl font-bold mb-1" style={{color: '#12529c'}}>11</p>
-              <p className="text-sm text-gray-600">studies completed</p>
             </div>
-            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gray-100">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{backgroundColor: '#12529c'}}>
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="https://i.ibb.co/4Z4tscS0/nephro.png"
+                  alt="Nephrology"
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <h4 className="font-bold text-lg mb-1">NEPHROLOGY</h4>
+                  <p className="text-2xl font-bold">10</p>
+                  <p className="text-sm opacity-90">studies completed</p>
+                </div>
               </div>
-              <h4 className="font-bold text-lg mb-2" style={{color: '#12529c'}}>NEPHROLOGY</h4>
-              <p className="text-2xl font-bold mb-1" style={{color: '#12529c'}}>10</p>
-              <p className="text-sm text-gray-600">studies completed</p>
             </div>
           </div>
           <div className="text-center mt-12">

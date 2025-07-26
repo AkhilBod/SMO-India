@@ -31,7 +31,6 @@ export default function AboutPage() {
               <li>• 50+ exclusive and associated sites across India</li>
               <li>• End-to-end Multinational and Multi-centric FDA-approved studies</li>
               <li>• 25+ years of domain clinical trial experience</li>
-              <li>• Managing over 70 trials in various therapeutic areas</li>
             </ul>
           </div>
         </div>

@@ -66,13 +66,11 @@ const competenceAreas = [
 	{
 		title: 'Audit & Inspection',
 		description:
-			'Proven track record in successfully navigating regulatory inspections and sponsor audits across multiple clinical studies.',
+			'We take pride in our proven track record of successfully navigating regulatory inspections and sponsor audits across multiple clinical studies. Our commitment to compliance, data integrity, and patient safety is reflected in the outcomes of these inspections.',
 		features: [
-			'FDA inspection support',
-			'EMEA inspection handling',
-			'Sponsor & CRO audits',
-			'Compliance maintenance',
-			'Quality assurance',
+			'FDA Inspection: Completed a U.S. FDA inspection at one of our clinical trial sites for a diabetes study, with no positive findings and no major findings',
+			'The European Medicines Agency (EMEA) inspected a diabetes study at one of our investigator sites, and there were no major findings. Our team received commendations for their work',
+			'Sponsor & CRO Audits: Over 10 Sponsor and CRO audits were conducted across various therapeutic areas and study phases all of which were completed with high compliance standards maintained',
 		],
 	},
 ];

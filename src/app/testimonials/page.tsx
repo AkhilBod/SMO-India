@@ -25,7 +25,7 @@ const testimonials = [
 	{
 		content:
 			'I want to thank the SMO-India team for their professionalism, patience, goodwill, and calmness that they kept in all, even during high-pressure situations! It was a great pleasure to work with all of you!',
-		author: 'Dr Roman Ivanov',
+		author: 'Dr. Roman Ivanov',
 		role: 'Vice President of R&D',
 		company: 'BIOCAD, Russia',
 	},
@@ -39,7 +39,7 @@ const testimonials = [
 	{
 		content:
 			'I wish to convey my sincere appreciation for the exceptional support and assistance provided during my 3-month stay in India. Your operational team expertise and dedication have proven invaluable throughout this period.',
-		author: 'Jesper Prior Larsen',
+		author: 'Jesper Prior',
 		role: 'Clinical Project Manager',
 		company: 'CCBR-SYNARC, Denmark',
 	},
@@ -144,6 +144,7 @@ export default function TestimonialsPage() {
 											src="https://i.ibb.co/xSVPf3nT/1000480122.jpg" 
 											alt="Professional gathering" 
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+											style={{objectPosition: 'center 20%'}}
 										/>
 									</div>
 								</div>
@@ -153,6 +154,7 @@ export default function TestimonialsPage() {
 											src="https://i.ibb.co/LzcQQ8rV/1000480402.jpg" 
 											alt="Client presentation" 
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+											style={{objectPosition: 'center 10%'}}
 										/>
 									</div>
 								</div>
