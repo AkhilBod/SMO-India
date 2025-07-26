@@ -235,9 +235,12 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 right-4">
+                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#f04b22'}}></div>
+                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">CARDIOVASCULAR</h4>
-                  <p className="text-2xl font-bold">37</p>
+                  <p className="text-2xl font-bold" style={{color: '#f04b22'}}>37</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
@@ -252,9 +255,12 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 right-4">
+                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#79b647'}}></div>
+                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">ENDOCRINOLOGY</h4>
-                  <p className="text-2xl font-bold">38</p>
+                  <p className="text-2xl font-bold" style={{color: '#79b647'}}>38</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
@@ -269,9 +275,12 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 right-4">
+                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#fecb09'}}></div>
+                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">GASTROENTEROLOGY</h4>
-                  <p className="text-2xl font-bold">11</p>
+                  <p className="text-2xl font-bold" style={{color: '#fecb09'}}>11</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
@@ -286,9 +295,12 @@ export default function Home() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 right-4">
+                  <div className="w-3 h-3 rounded-full" style={{backgroundColor: '#12529c'}}></div>
+                </div>
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h4 className="font-bold text-lg mb-1">NEPHROLOGY</h4>
-                  <p className="text-2xl font-bold">10</p>
+                  <p className="text-2xl font-bold" style={{color: '#12529c'}}>10</p>
                   <p className="text-sm opacity-90">studies completed</p>
                 </div>
               </div>
