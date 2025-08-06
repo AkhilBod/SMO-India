@@ -30,10 +30,6 @@ const achievements = [
 		label: 'Clinical Trials as SMO',
 	},
 	{
-		number: '50+',
-		label: 'Exclusive Sites',
-	},
-	{
 		number: '25+',
 		label: 'Years Experience',
 	},
@@ -154,7 +150,7 @@ export default function ServicesPage() {
 								Our achievements in clinical research excellence
 							</p>
 						</div>
-						<dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+						<dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
 							{achievements.map((stat, index) => (
 								<div
 									key={stat.label}

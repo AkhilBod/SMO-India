@@ -114,23 +114,12 @@ export default function Home() {
               Your Trusted Clinical Research Partner
             </h2>
             <p className="mt-12 text-2xl leading-9 text-gray-600 max-w-4xl mx-auto lg:text-2xl">
-              CDSCO-registered CRO specializing in Phase I-IV clinical trials with 25+ years of experience and 50+ sites across India.
+              CDSCO-registered CRO specializing in Phase I-IV clinical trials with 25+ years of experience across India.
             </p>
           </div>
 
           {/* Key Highlights - More visual and concise */}
-          <div className="mt-28 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-            <div className="text-center group">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300" style={{backgroundColor: '#12529c'}}>
-                <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                </svg>
-              </div>
-              <h3 className="mt-6 text-2xl font-bold" style={{color: '#12529c'}}>50+</h3>
-              <p className="mt-2 text-base text-gray-700">Sites</p>
-              <p className="mt-1 text-sm text-gray-500">Exclusive and associated sites across India</p>
-            </div>
-
+          <div className="mt-28 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             <div className="text-center group">
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300" style={{backgroundColor: '#79b647'}}>
                 <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">

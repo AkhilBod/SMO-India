@@ -231,7 +231,7 @@ export default function TestimonialsPage() {
 									</div>
 								</div>
 								<div className="flex-shrink-0">
-									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-80">
 										<img 
 											src="https://i.ibb.co/pr5hTkwv/Untitled.png" 
 											alt="SMO India overview" 

@@ -28,7 +28,6 @@ export default function AboutPage() {
             <ul className="mt-6 space-y-4 text-lg leading-8 text-gray-600">
               <li>• Successfully completed 14+ Clinical trials as a full-service CRO</li>
               <li>• 115+ Clinical trials as Site Management Organization (SMO)</li>
-              <li>• 50+ exclusive and associated sites across India</li>
               <li>• End-to-end Multinational and Multi-centric FDA-approved studies</li>
               <li>• 25+ years of domain clinical trial experience</li>
             </ul>
