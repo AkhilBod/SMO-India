@@ -17,7 +17,7 @@ const partners = [
 		name: 'CJSC BIOCAD',
 		location: 'Russia',
 		description: 
-			'Partnership with leading Biopharmaceutical company for conducting Multinational, Multicentric Clinical Trials in India.',
+			'Partnership with leading Biopharmaceutical company for conducting Multinational and Multicentric Clinical Trials in India.',
 	},
 	{
 		name: 'Septodont',

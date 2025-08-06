@@ -188,8 +188,35 @@ export default function TestimonialsPage() {
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
 										<img 
-											src="https://i.ibb.co/8nbHx1xx/1000480422.jpg" 
-											alt="Professional discussion" 
+											src="https://i.ibb.co/3g8VP4x/12-Group-Pic-1.jpg" 
+											alt="Group picture" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/pgc86gm/Picture-102-1.jpg" 
+											alt="Professional meeting" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/RGPzrf7r/Picture-105-1.jpg" 
+											alt="Team collaboration" 
+											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+										/>
+									</div>
+								</div>
+								<div className="flex-shrink-0">
+									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
+										<img 
+											src="https://i.ibb.co/LdkGPN38/Screenshot-2-1.png" 
+											alt="Professional workspace" 
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>

@@ -153,8 +153,6 @@ export default function ContactPage() {
                       <li>• Site Management Organization (SMO)</li>
                       <li>• Regulatory Affairs & Compliance</li>
                       <li>• Patient Recruitment & Retention</li>
-                      <li>• Data Management & Biostatistics</li>
-                      <li>• Pharmacovigilance</li>
                     </ul>
                   </div>
                   
