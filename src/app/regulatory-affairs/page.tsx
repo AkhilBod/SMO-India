@@ -5,7 +5,7 @@ const teamMembers = [
     name: "Rakshith Katta",
     title: "Director – Regulatory Affairs",
     experience: "12+ years",
-    specialization: "Over 12 years of global regulatory experience, including 8+ years consulting directly with the FDA in Washington, DC. MBA from Johns Hopkins University and Master's degree in Regulatory Affairs for Drugs, Biologics, and Medical Devices from Boston University.",
+    specialization: "Over 12 years of global regulatory experience, including 8+ years consulting directly with the FDA in Washington, DC. MBA from Johns Hopkins University and Master's degree in Regulatory Affairs for Drugs, Biologics, and Medical Devices from Northeastern University.",
     color: "#f04b22"
   },
   {
