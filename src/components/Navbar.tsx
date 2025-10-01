@@ -13,7 +13,7 @@ const navigation = [
   { name: 'Therapeutic Areas', href: '/therapeutic-areas' },
   { name: 'Our Competence', href: '/competence' },
   { name: 'Clinical Trials', href: '/clinical-trials' },
-  { name: 'Regulatory Affairs 3PO', href: '/regulatory-affairs' },
+  // { name: 'Regulatory Affairs 3PO', href: '/regulatory-affairs' }, // Hidden temporarily
   { name: 'Resources', href: '/resources' },
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact', href: '/contact' },
