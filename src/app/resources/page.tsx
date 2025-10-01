@@ -117,7 +117,7 @@ export default function ResourcesPage() {
 					</div>
 
 					<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-						{partners.map((partner, index) => (
+						{partners.map((partner) => (
 							<div
 								key={partner.name}
 								className="flex flex-col rounded-2xl bg-white p-8 shadow-lg ring-1 ring-gray-200"

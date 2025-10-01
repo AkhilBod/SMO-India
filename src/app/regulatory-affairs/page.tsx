@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function RegulatoryAffairs() {
   return (
     <div className="bg-white pt-24">
@@ -10,13 +12,13 @@ export default function RegulatoryAffairs() {
             This page is currently under maintenance. Please check back later.
           </p>
           <div className="mt-10">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               style={{backgroundColor: "#12529c"}}
             >
               Return to Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>

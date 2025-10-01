@@ -30,7 +30,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            {coreServices.map((service, index) => (
+            {coreServices.map((service) => (
               <div
                 key={service}
                 className="flex flex-col rounded-lg bg-white p-6 shadow-sm border border-gray-200"
