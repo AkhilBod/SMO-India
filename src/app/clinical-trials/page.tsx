@@ -164,7 +164,7 @@ export default function ClinicalTrialsPage() {
 					</div>
 
 					<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-						{clinicalExpertise.map((area, index) => (
+						{clinicalExpertise.map((area) => (
 							<div
 								key={area.title}
 								className="rounded-2xl bg-white p-8 shadow-lg"

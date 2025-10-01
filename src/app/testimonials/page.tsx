@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const testimonials = [
 	{
 		content:
@@ -113,36 +115,44 @@ export default function TestimonialsPage() {
 							<div className="flex gap-6 overflow-x-auto scrollbar-hide pb-4" style={{scrollBehavior: 'smooth'}}>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/W4qQ14CL/1000029992.png" 
 											alt="Client collaboration moment" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/k6xKxHSH/1000030206.jpg" 
 											alt="Clinical research meeting" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/Vck004vG/1000480114.jpg" 
 											alt="Team collaboration" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/xSVPf3nT/1000480122.jpg" 
 											alt="Professional gathering" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 											style={{objectPosition: 'center 20%'}}
 										/>
@@ -150,9 +160,11 @@ export default function TestimonialsPage() {
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/LzcQQ8rV/1000480402.jpg" 
 											alt="Client presentation" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 											style={{objectPosition: 'center 10%'}}
 										/>
@@ -160,81 +172,99 @@ export default function TestimonialsPage() {
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/SDf92nwg/1000480406.jpg" 
 											alt="Research conference" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/s993Fqrr/1000480410.jpg" 
 											alt="Industry event" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/Tqtw8MxZ/1000480412.jpg" 
 											alt="Team meeting" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/3g8VP4x/12-Group-Pic-1.jpg" 
 											alt="Group picture" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/pgc86gm/Picture-102-1.jpg" 
 											alt="Professional meeting" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/RGPzrf7r/Picture-105-1.jpg" 
 											alt="Team collaboration" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/LdkGPN38/Screenshot-2-1.png" 
 											alt="Professional workspace" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-80 h-64">
-										<img 
+										<Image 
 											src="https://i.ibb.co/HpxpfMGB/DSC07505.jpg" 
 											alt="Clinical research workspace" 
+											width={320}
+											height={256}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>
 								</div>
 								<div className="flex-shrink-0">
 									<div className="relative overflow-hidden rounded-lg shadow-lg w-96 h-80">
-										<img 
+										<Image 
 											src="https://i.ibb.co/pr5hTkwv/Untitled.png" 
 											alt="SMO India overview" 
+											width={384}
+											height={320}
 											className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
 										/>
 									</div>

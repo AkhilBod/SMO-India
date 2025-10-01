@@ -157,7 +157,7 @@ export default function TherapeuticAreasPage() {
 				</div>
 
 				<div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-					{therapeuticAreas.map((area, index) => (
+					{therapeuticAreas.map((area) => (
 						<div
 							key={area.name}
 							className="relative rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-shadow"

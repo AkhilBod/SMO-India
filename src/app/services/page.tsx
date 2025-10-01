@@ -67,7 +67,7 @@ export default function ServicesPage() {
 						</p>
 					</div>
 					<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-						{coreServices.map((service, index) => (
+						{coreServices.map((service) => (
 							<div
 								key={service}
 								className="flex flex-col rounded-lg bg-white p-6 shadow-sm"
@@ -151,7 +151,7 @@ export default function ServicesPage() {
 							</p>
 						</div>
 						<dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
-							{achievements.map((stat, index) => (
+							{achievements.map((stat) => (
 								<div
 									key={stat.label}
 									className="flex flex-col bg-white/5 p-8"
