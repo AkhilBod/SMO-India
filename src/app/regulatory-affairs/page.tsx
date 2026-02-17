@@ -261,15 +261,6 @@ export default function RegulatoryAffairs() {
                     </div>
                   </div>
                 </div>
-                
-                <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-[#12529c]">Important Note</h3>
-                  <div className="bg-yellow-50 border-l-4 p-4 rounded" style={{borderLeftColor: '#fecb09'}}>
-                    <p className="text-sm text-gray-700">
-                      <span className="font-medium">Note:</span> SMO India is in the process of seeking FDA Third Party Reviewer accreditation. No service is offered as accredited until FDA approval is granted.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
