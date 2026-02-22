@@ -13,7 +13,8 @@ const navigation = [
   { name: 'Therapeutic Areas', href: '/therapeutic-areas' },
   { name: 'Our Competence', href: '/competence' },
   { name: 'Clinical Trials', href: '/clinical-trials' },
-  { name: 'Regulatory Affairs 3PO', href: '/regulatory-affairs' },
+  { name: 'FDA 510(k) Third Party Review', href: '/fda-third-party-review' },
+  { name: 'Regulatory Affairs', href: '/regulatory-affairs' },
   { name: 'Resources', href: '/resources' },
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact', href: '/contact' },
@@ -24,7 +25,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white shadow">
-      <nav className="flex items-center justify-between p-6 xl:px-8" aria-label="Global">
+      <nav className="flex items-center justify-between p-4 lg:px-6 xl:px-8" aria-label="Global">
         <div className="flex xl:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
@@ -37,7 +38,7 @@ export default function Navbar() {
             />
           </Link>
         </div>
-        <div className="flex xl:hidden">
+        <div className="flex 2xl:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -47,19 +48,19 @@ export default function Navbar() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden xl:flex xl:gap-x-8 2xl:gap-x-12">
+        <div className="hidden 2xl:flex 2xl:gap-x-4">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600 whitespace-nowrap"
+              className="text-sm font-semibold leading-5 text-gray-900 hover:text-blue-600 whitespace-nowrap px-2 py-2"
             >
               {item.name}
             </Link>
           ))}
         </div>
       </nav>
-      <Dialog as="div" className="xl:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog as="div" className="2xl:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
