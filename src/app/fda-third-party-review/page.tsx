@@ -11,7 +11,6 @@ const keyPoints = [
 const fdaServices = [
   "Independent Third Party 510(k) reviews for eligible Class II devices",
   "Technical and regulatory evaluation aligned with FDA review expectations",
-  "Identification of deficiencies and clarification requests",
   "Structured review outputs suitable for FDA submission under the Third Party pathway"
 ];
 
@@ -48,15 +47,9 @@ export default function FDAThirdPartyReview() {
       <div className="bg-gray-50 border-b border-gray-200 pt-20">
         <div className="max-w-5xl mx-auto px-4 py-8">
           <div className="flex items-center space-x-6 mb-6">
-            <Image
-              src="/image-1771735667532.png"
-              alt="FDA Logo"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
+        
             <div>
-              <div className="text-sm text-gray-600 mb-1">U.S. Food and Drug Administration</div>
+              <div className="text-sm text-gray-600 mb-1"></div>
               <h1 className="text-2xl font-bold text-gray-900">
                 FDA-Recognized Third Party 510(k) Review Unit
               </h1>
