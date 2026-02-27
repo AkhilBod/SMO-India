@@ -161,40 +161,6 @@ export default function RegulatoryAffairs() {
           </div>
         </div>
       </div>
-
-      {/* Team Section */}
-      <div className="py-16 sm:py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <UserGroupIcon className="h-12 w-12 mx-auto mb-4" style={{color: '#f04b22'}} />
-            <h2 className="text-3xl font-bold tracking-tight text-[#12529c] sm:text-4xl">
-              Our Expert Team
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Led by seasoned regulatory professionals with extensive FDA experience and deep understanding 
-              of the Third Party Review Unit processes.
-            </p>
-          </div>
-          
-          <div className="mx-auto mt-16 max-w-7xl">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-1 xl:grid-cols-3">
-              {teamMembers.map((member, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm border-t-4" style={{borderTopColor: member.color}}>
-                  <h3 className="text-lg font-semibold mb-2" style={{color: member.color}}>{member.name}</h3>
-                  <p className="text-[#12529c] font-medium mb-2">{member.title}</p>
-                  <p className="text-gray-600 mb-3">
-                    <span className="font-medium">Experience:</span> {member.experience}
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    {member.specialization}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Commitment Section */}
       <div className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
